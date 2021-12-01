@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git 'https://github.com/dawnslawter/simple-node-js-react-npm-app'
+				git branch:"master", url:'https://github.com/dawnslawter/simple-node-js-react-npm-app.git'
 			}
 		}
 
